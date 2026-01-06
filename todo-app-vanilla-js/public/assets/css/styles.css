@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 80%;
+  border: 1px solid #00000020;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+main h1 {
+  color: #333;
+  font-size: 24px;
+  letter-spacing: 1.25px;
+}
+
+main form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #99999920;
+  border-radius: 10px;
+}
+
+main form input {
+  height: 45px;
+  background: transparent;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 0px 12px;
+}
+
+main form button {
+  min-width: 80px;
+  height: 45px;
+  border: none;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #99999960;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+main form button:hover {
+  background: #99999980;
+}
+
+main #todo-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+main #todo-list .todo-item {
+  padding: 12px;
+  border: 1px solid #00000020;
+  border-radius: 8px;
+  position: relative;
+  min-height: 100px;
+  display: inline-flex;
+  align-items: start;
+  justify-content: start;
+}
+
+main #todo-list .todo-item.completed {
+  border: 1px solid #00ff2250;
+  background: #00ff2230;
+}
+
+main #todo-list .todo-item p {
+  color: #555;
+  font-size: 16px;
+  word-break: break-word;
+}
+
+main #todo-list .todo-item .actions {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+main #todo-list .todo-item .actions button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+main #todo-list .todo-item .actions button:first-child i {
+  color: blue;
+}
+
+main #todo-list .todo-item .actions button:last-child i {
+  color: red;
+}
+
+main #todo-list .todo-item .actions button:hover {
+  transform: scale(1.2);
+}

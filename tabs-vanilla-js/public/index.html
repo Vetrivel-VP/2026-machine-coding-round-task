@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs - Vanilla JS</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="tabsContainer">
+      <div class="tabs" role="tablist">
+        <button type="button" class="tab active" role="tab" data-tab="tab-1">
+          Overview
+        </button>
+
+        <button type="button" class="tab" role="tab" data-tab="tab-2">
+          Features
+        </button>
+
+        <button type="button" class="tab" role="tab" data-tab="tab-3">
+          Pricing
+        </button>
+
+        <span class="indicator"></span>
+      </div>
+
+      <div class="tabsPanels">
+        <div class="tabPanel active" id="tab-1" role="tabpanel">
+          <h2>Overview</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
+            voluptas tempore non esse fugit nemo dignissimos recusandae eligendi
+            maiores nihil in consectetur, veniam aut cumque nostrum reiciendis,
+            nesciunt laborum! Repudiandae.
+          </p>
+        </div>
+
+        <div class="tabPanel" id="tab-2" role="tabpanel">
+          <h2>Features</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
+            voluptas tempore non esse fugit nemo dignissimos recusandae eligendi
+            maiores nihil in consectetur, veniam aut cumque nostrum reiciendis,
+            nesciunt laborum! Repudiandae.
+          </p>
+        </div>
+
+        <div class="tabPanel" id="tab-3" role="tabpanel">
+          <h2>Pricing</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At
+            voluptas tempore non esse fugit nemo dignissimos recusandae eligendi
+            maiores nihil in consectetur, veniam aut cumque nostrum reiciendis,
+            nesciunt laborum! Repudiandae.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
